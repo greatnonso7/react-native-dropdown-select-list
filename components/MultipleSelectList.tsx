@@ -39,6 +39,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
   disabledItemStyles,
   disabledTextStyles,
   disabledCheckBoxStyles,
+  selectedIcon,
   labelStyles,
   badgeStyles,
   badgeTextStyles,
@@ -266,14 +267,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
                             disabledCheckBoxStyles,
                           ]}
                         >
-                          {selectedval?.includes(value) ? (
-                            <Image
-                              key={index}
-                              source={require('../assets/images/check.png')}
-                              resizeMode="contain"
-                              style={[{ width: 8, height: 8, paddingLeft: 7 }]}
-                            />
-                          ) : null}
+                          {selectedval?.includes(value) ? selectedIcon : null}
                         </View>
                         <Text
                           style={[
