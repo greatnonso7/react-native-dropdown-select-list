@@ -42,6 +42,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
   labelStyles,
   badgeStyles,
   badgeTextStyles,
+  placeholderColor,
   checkBoxStyles,
   save = 'key',
   dropdownShown = false,
@@ -111,6 +112,7 @@ const MultipleSelectList: React.FC<MultipleSelectListProps> = ({
 
             <TextInput
               placeholder={searchPlaceholder}
+              placeholderTextColor={placeholderColor}
               onChangeText={(val) => {
                 let result = data.filter((item: L1Keys) => {
                   val.toLowerCase();

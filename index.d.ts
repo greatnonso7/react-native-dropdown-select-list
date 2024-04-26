@@ -130,6 +130,11 @@ export interface MultipleSelectListProps {
   placeholder?: string;
 
   /**
+   * Placeholder color that will be displayed in the select box
+   */
+  placeholderColor?: string;
+
+  /**
    * Additional styles for select box
    */
   boxStyles?: ViewStyle;
