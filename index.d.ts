@@ -252,7 +252,7 @@ export interface MultipleSelectListProps {
   /**
    * Additional styles for multiselect badge text
    */
-  badgeTextStyles?: ViewStyle;
+  badgeTextStyles?: TextStyle & ViewStyle;
 
   /**
    * Additional styles for label
