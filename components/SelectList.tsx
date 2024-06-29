@@ -83,7 +83,8 @@ const SelectList: React.FC<SelectListProps> = ({
 
   React.useEffect(() => {
     if (defaultOption) {
-      onSetValue(defaultOption);
+      setSelected(defaultOption.key);
+      setSelectedVal(defaultOption.value);
     }
   }, [defaultOption]);
 
