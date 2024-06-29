@@ -58,6 +58,12 @@ export interface SelectListProps {
   defaultOption?: { key: any; value: any };
 
   /**
+   * The default to set and update the selected value
+   */
+
+  onSetValue: (value: any) => void;
+
+  /**
    * Pass any JSX to this prop like Text, Image or Icon to show instead of search icon
    */
   searchicon?: JSX.Element;

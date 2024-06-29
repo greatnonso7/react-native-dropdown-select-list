@@ -27,6 +27,7 @@ const SelectList: React.FC<SelectListProps> = ({
   data,
   placeholderColor,
   defaultOption,
+  onSetValue,
   searchicon = false,
   arrowicon = false,
   closeicon = false,
@@ -79,6 +80,12 @@ const SelectList: React.FC<SelectListProps> = ({
     }
     onSelect();
   }, [selectedval]);
+
+  React.useEffect(() => {
+    if (defaultOption) {
+      onSetValue(defaultOption);
+    }
+  }, [defaultOption]);
 
   React.useEffect(() => {
     if (
